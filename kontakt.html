@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pošaljite nam upit za najam vozila ili nas kontaktirajte za dodatne informacije.">
+    <meta property="og:title" content="Kontakt - Zadar Drive Rent-a-Car">
+    <meta property="og:image" content="img/Main.png">
+    <title>Kontakt - Zadar Drive Rent-a-Car</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Preskoči na sadržaj</a>
+    <header>
+        <nav>
+            <div class="logo">Zadar Drive</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="vozila.html">Vozila</a></li>
+                <li><a href="o_nama.html">O nama</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <img src="img/Main.png" alt="Zadar Drive logo" class="hero-logo">
+        </section>
+        <section class="contact-section">
+            <h1>Kontaktirajte nas</h1>
+            <p class="subtitle">Imate pitanja? Naš tim vam stoji na raspolaganju 24/7.</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span>📍</span>
+                        <div>
+                            <h3>Adresa</h3>
+                            <p>Zračna luka Zadar, 23000 Zadar</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span>📞</span>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p>+385 23 111 222</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span>✉️</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@zadardrive.hr</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#">
+                    <div class="form-group">
+                        <label for="ime">Ime i prezime</label>
+                        <input type="text" id="ime" name="ime" placeholder="npr. Ivan Horvat" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail adresa</label>
+                        <input type="email" id="email" name="email" placeholder="vas@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="poruka">Vaša poruka</label>
+                        <textarea id="poruka" name="poruka" rows="5" placeholder="Kako vam možemo pomoći?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Pošalji poruku</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Zadar Drive - Projekt 1</p>
+            <p>Kolegij: Uvod u Web tehnologije</p>
+            <p>Autor: Srđan Đekić, UNIZD IT 2026. </p>
+        </div>
+    </footer>
+</body>
+</html>
