@@ -65,8 +65,13 @@ nav {
     font-weight: bold;
 }
 
-.nav-links a:hover, .active {
-    color: var(--primary-color); 
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links a.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
 }
 
 #menu-toggle { display: none; }
