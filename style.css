@@ -63,6 +63,9 @@ nav {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5rem 0;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -119,10 +122,10 @@ main {
     border-radius: 4px;
 }
 
-@media (max-width: 375px) {
-    .hamburger { display: block; }
+@media (max-width: 678px) {
+    .hamburger { display: block; }  /*Prikazi Hamburger Ikonu*/
     .nav-links {
-        display: none;
+        display: none;               /*Sakri obicni meni*/
         flex-direction: column;
         width: 100%;
         position: absolute;
@@ -291,14 +294,20 @@ tr:hover {
 
 .skip-link {
     position: absolute;
-    left: -10000px;
+    left: -9999px;
     background: var(--primary-color);
     color: white;
     padding: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    z-index: 10001;
 }
 
 .skip-link:focus { 
-    left: 0; 
+    left: 0;
+    top: 0;
+    outline: 3px solid yellow;
 }
 
 .footer-content p{
